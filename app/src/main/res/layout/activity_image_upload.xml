@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ImageUploadActivity">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/account"
+        android:layout_width="250dp"
+        android:layout_height="243dp"
+        app:cardCornerRadius="70dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.121">
+        <ImageView
+            android:id="@+id/imagebtn"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/noimg" />
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Upload"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account"
+        app:layout_constraintVertical_bias="0.476" />
+    <ImageView
+        android:id="@+id/imabtn2"
+        android:layout_width="55dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/account"
+        app:layout_constraintEnd_toEndOf="@+id/account"
+        app:layout_constraintStart_toEndOf="@+id/account"
+        app:srcCompat="@drawable/ic_camera" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

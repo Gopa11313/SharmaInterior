@@ -1,0 +1,3 @@
+include ':sharmawear'
+include ':app'
+rootProject.name = "Sharma Interior Design"
